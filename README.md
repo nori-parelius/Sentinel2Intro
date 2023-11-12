@@ -31,16 +31,16 @@ When you download the data, it comes as a zip file with a long name containing a
 ## What you need to install in order to run this notebook
 ### That is if you decide to run it on your own computer
 
-1. First of all you need Anaconda https://www.anaconda.com/download
+1. First of all you need [Anaconda](https://www.anaconda.com/download)  
 Anaconda is the easiest way to get coding with Python, so go ahead and install if you don't have it yet.
 Installing Anaconda should provide all you need, including the jupyter notebooks. 
-2. Create a new environment
+2. Create a new environment  
 Most projects will require you to install a bunch of Python packages. It can get messy fast, because many 
 packages depend on each other. It's good practice to make a new virtual environment, called conda environment
 in this case for any new projects. 
 To do this, you go to Anaconda Powershell Prompt and type: 
 ```conda create --name <your_env_name>``` where <your_env_name> can be something like sentinel2 or whatever you want.
-Then type ```conda activate <your_env_name>``` and you can start using it. 
+Then type ```conda activate <your_env_name>``` and you can start using it.  
 Note: In Jupyter notebook you will need to pick the right environment. 
 3. Install the necessary packages
 These are the packages used:  
@@ -50,6 +50,6 @@ These are the packages used:
 * rasterio (to work with geotiffs in Python)
 * geopandas (working with geovectors)
 * folium (get to use maps)
-* jupyter (just for the presentation)
+* jupyter (just for the presentation, you don't need that)
 
 You install them with ```conda install -c conda-forge <package_name>```
