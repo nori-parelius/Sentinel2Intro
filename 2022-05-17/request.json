@@ -1,0 +1,64 @@
+{
+    "request": {
+        "headers": {
+            "accept": "image/tiff",
+            "content-type": "application/json"
+        },
+        "payload": {
+            "evalscript": "\n    //VERSION=3\n    function setup() {\n        return {\n            input: [{\n                bands: [\"B01\",\"B02\",\"B03\",\"B04\",\"B05\",\"B06\",\"B07\",\"B08\",\"B8A\",\"B09\",\"B11\",\"B12\"],\n                units: \"DN\"\n            }],\n            output: {\n                bands: 12,\n                sampleType: \"INT16\"\n            }\n        };\n    }\n\n    function evaluatePixel(sample) {\n        return [sample.B01,\n                sample.B02,\n                sample.B03,\n                sample.B04,\n                sample.B05,\n                sample.B06,\n                sample.B07,\n                sample.B08,\n                sample.B8A,\n                sample.B09,\n                sample.B11,\n                sample.B12];\n    }\n",
+            "input": {
+                "bounds": {
+                    "bbox": [
+                        11.35,
+                        60.0,
+                        11.8,
+                        60.21
+                    ],
+                    "properties": {
+                        "crs": "http://www.opengis.net/def/crs/EPSG/0/4326"
+                    }
+                },
+                "data": [
+                    {
+                        "dataFilter": {
+                            "timeRange": {
+                                "from": "2022-05-17T00:00:00Z",
+                                "to": "2022-05-17T23:59:59Z"
+                            }
+                        },
+                        "type": "sentinel-2-l2a"
+                    }
+                ]
+            },
+            "output": {
+                "height": 2435,
+                "responses": [
+                    {
+                        "format": {
+                            "type": "image/tiff"
+                        },
+                        "identifier": "default"
+                    }
+                ],
+                "width": 2410
+            }
+        },
+        "timestamp": "2023-11-12T12:05:26.572609",
+        "url": "https://sh.dataspace.copernicus.eu/api/v1/process"
+    },
+    "response": {
+        "elapsed": 25.120458,
+        "headers": {
+            "access-control-allow-credentials": "true",
+            "access-control-allow-headers": "origin,content-type,accept,accept-crs,authorization,cache-control",
+            "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS, HEAD, PATCH",
+            "access-control-allow-origin": "*",
+            "access-control-max-age": "3600",
+            "content-type": "image/tiff",
+            "date": "Sun, 12 Nov 2023 11:04:47 GMT",
+            "transfer-encoding": "chunked",
+            "x-processingunits-spent": "89.54391479492188"
+        },
+        "status_code": 200
+    }
+}
