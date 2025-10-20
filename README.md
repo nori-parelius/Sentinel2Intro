@@ -4,6 +4,11 @@ This repo contains the code for a lecture on using Sentinel 2 as part of TEK4710
 
 The .ipynb file includes a demo of how to download Sentinel 2 data using the Copernicus Browser, visualise the data and calculate the NDVI index. 
 
+You can open the notebook directly in Google Colab and work with it there:
+
+![Open In Colab](https://colab.research.google.com/github/nori-parelius/Sentinel2Intro/blob/main/Sentinel2.ipynb)
+
+
 If you are a participant in that course, as a pre-homework, I would like you to read this README.md before the class. 
 
 
