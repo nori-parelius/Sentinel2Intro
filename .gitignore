@@ -1,1 +1,6 @@
 *.html
+*.zip
+*.SAFE/
+*.tif
+/data/
+/.ipynb_checkpoints/
