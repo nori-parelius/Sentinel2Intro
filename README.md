@@ -24,4 +24,4 @@ This means you need a Google account (sorry about that), and we will also use Go
 
 You can open the notebook directly in Google Colab.
 
-![Open In Colab](https://colab.research.google.com/github/nori-parelius/Sentinel2Intro/blob/main/Sentinel2.ipynb)
+[Open In Colab](https://colab.research.google.com/github/nori-parelius/Sentinel2Intro/blob/main/Sentinel2.ipynb)
